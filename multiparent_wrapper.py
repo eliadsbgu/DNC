@@ -1,4 +1,4 @@
-from GA.multiparent_dnc import NeuralCrossover
+from multiparent_dnc import NeuralCrossover
 import torch
 
 
