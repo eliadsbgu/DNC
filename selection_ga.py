@@ -156,7 +156,7 @@ class SelectionGA:
         pairs_to_cross = []
         next_gen = []
 
-        crossover_masks = np.random.uniform(size=(len(population) // 2, len(population[0])))[0]
+        crossover_masks = np.random.uniform(size=len(population) // 2)
         extended_crossover_parent_indexes = np.random.randint(low=0, high=len(population),
                                                               size=(len(population) // 2, self.n_parents - 2))
         crossover_index = 0
